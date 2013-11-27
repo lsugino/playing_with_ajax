@@ -1,0 +1,20 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: Forum_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: Forum_test
+  pool: 5
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: Forum_production
+  pool: 5
+

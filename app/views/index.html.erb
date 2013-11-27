@@ -1,0 +1,12 @@
+<h1>Topics</h1>
+
+<% @topics.each do |topic| %>
+  <div class="topic">
+  <%= topic.title %>
+  </div>
+<% end %><br>
+
+<%= form_for @topic do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit "Add Topic" %>
+<% end %>

@@ -1,0 +1,19 @@
+<h1>Topics</h1>
+
+<div id="list">
+  <% @topics.each do |topic| %>
+    <div class="topic">
+    <%= topic.title %>
+    </div>
+  <% end %>
+</div>
+
+<%= form_for @new_topic do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit "Add Topic" %>
+<% end %>
+
+
+<div id="hidden">
+  <div class="topic-template"></div>
+</div>
